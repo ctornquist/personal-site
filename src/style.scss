@@ -1,9 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body, html {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+  font-family: "Raleway", sans-serif;
   height: 100%;
 }
 
-.active {
-  color: pink;
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+
+  #name {
+    margin-left: 5%;
+    font-size: larger;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+  }
+
+  &_links {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.welcome {
+
+  .name {
+    position: absolute;
+    z-index: 990;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 8%;
+    color: white;
+    width: 50vw;
+    
+    h1 {
+      font-weight: bolder;
+      font-size: 3em;
+    }
+  }
+
+  .react-slideshow-container {
+    // position: absolute;
+    // top: 70px;
+    object-fit: cover;
+  }
+
+  .image-container {
+    top: -10;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5%;
+  background-color: red;
+
+  h1 {
+    margin-left: 38%;
+  }
+
+  img {
+    max-height: 300px;
+    width: auto;
+  }
+
+  p {
+    margin: 3%;
+    width: 40vw;
+    // animation: 2s slideIn 2s forwards;
+   // transform: translateX(-100%);
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /* @keyframes slideIn {
+    0% {
+      transform: translateX(-900px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  } */
+}
+
+.internships {
+  h1 {
+    margin-left: 38%;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right, .left{
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  p {
+    margin: 3%;
+  }
+}
+
+.projects {
+  h1 {
+    margin-left: 38%;
+  }
+
+  .card{
+    background-color: pink;
+    width: 30vw;
+    height: auto;
+    margin: 1%;
+    min-height: 100px;
+  }
+
+  .row{
+    margin-left: 15%;
+  }
+
+  .description {
+    position: absolute;
+    bottom: 1;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .card:hover .description {
+    height: 100%;
+  }
+}
+
+.contact {
+  h1 {
+    margin-left: 38%;
+  }
+
+  #contact-form {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
+  }
+
+  .form-group, input, textarea {
+    width: 100%;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
