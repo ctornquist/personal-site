@@ -42,11 +42,6 @@ class Contact extends Component {
             <button type="submit" className="btn btn-primary">Send</button>
           </div>
         </form>
-
-        <footer>
-          <p> copyright caroline tornquist 2020</p>
-          <p>add some socials in here</p>
-        </footer>
       </div>
     );
   }

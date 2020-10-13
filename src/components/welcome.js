@@ -11,7 +11,6 @@ import Franconia from '../images/franconia.jpeg';
 import Mink from '../images/mink.jpeg';
 import Morey from '../images/morey.jpeg';
 import Normandy from '../images/normandy.jpeg';
-import Sharon from '../images/sharon.jpeg';
 import Sunrise from '../images/sunrise.jpeg';
 
 const fadeProperties = {
@@ -40,12 +39,12 @@ const Welcome = (props) => {
       <Fade {...fadeProperties}>
         <div className="each-fade">
           <div className="image-container">
-            <img src={Baker} alt="first" />
+            <img src={Morey} alt="first" />
           </div>
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={Fall} alt="first" />
+            <img src={Sunrise} alt="first" />
           </div>
         </div>
         <div className="each-fade">
@@ -60,7 +59,7 @@ const Welcome = (props) => {
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={Morey} alt="first" />
+            <img src={Baker} alt="first" />
           </div>
         </div>
         <div className="each-fade">
@@ -70,12 +69,7 @@ const Welcome = (props) => {
         </div>
         <div className="each-fade">
           <div className="image-container">
-            <img src={Sharon} alt="first" />
-          </div>
-        </div>
-        <div className="each-fade">
-          <div className="image-container">
-            <img src={Sunrise} alt="first" />
+            <img src={Fall} alt="first" />
           </div>
         </div>
       </Fade>

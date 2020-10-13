@@ -6,7 +6,7 @@ import proPic from '../images/profile.jpeg';
 const About = (props) => {
   return (
     <div className="about" id="about">
-      <h1>About</h1>
+      <h1>ABOUT</h1>
       <hr />
       <div className="about_info">
         <img src={proPic} alt="caroline" />

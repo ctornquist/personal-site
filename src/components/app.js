@@ -16,6 +16,10 @@ const App = (props) => {
       <Internships />
       <Projects />
       <Contact />
+      <footer>
+        <p> copyright caroline tornquist 2020</p>
+        <p>add some socials in here</p>
+      </footer>
     </div>
   );
 };
