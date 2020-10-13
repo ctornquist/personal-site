@@ -66,6 +66,17 @@ body, html {
       font-weight: bolder;
       font-size: 3em;
     }
+
+    .socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    a {
+      color: white;
+      margin: 10%;
+    }
   }
 
   .react-slideshow-container {

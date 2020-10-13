@@ -3,6 +3,8 @@ import '../style.scss';
 import React from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import { Fade } from 'react-slideshow-image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Baker from '../images/baker.jpeg';
 import Fall from '../images/fall.jpeg';
 import Franconia from '../images/franconia.jpeg';
@@ -13,7 +15,7 @@ import Sharon from '../images/sharon.jpeg';
 import Sunrise from '../images/sunrise.jpeg';
 
 const fadeProperties = {
-  duration: 15000,
+  duration: 3000,
   transitionDuration: 500,
   infinite: true,
   indicators: false,
@@ -26,7 +28,14 @@ const Welcome = (props) => {
       <div className="name">
         <h1>CAROLINE TORNQUIST</h1>
         <h2>dartmouth 22 cs major</h2>
-        <p>icons to socials here</p>
+        <div className="socials">
+          <a href="https://github.com/ctornquist">
+            <FontAwesomeIcon icon={faGithub} className="fa-2x" />
+          </a>
+          <a href="https://www.linkedin.com/in/carolinetornquist/">
+            <FontAwesomeIcon icon={faLinkedin} className="fa-2x" />
+          </a>
+        </div>
       </div>
       <Fade {...fadeProperties}>
         <div className="each-fade">
