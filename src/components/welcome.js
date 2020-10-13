@@ -26,7 +26,7 @@ const Welcome = (props) => {
     <div className="welcome" id="welcome">
       <div className="name">
         <h1>CAROLINE TORNQUIST</h1>
-        <h2>dartmouth 22 cs major</h2>
+        <h2>dartmouth &#39;22 computer science major</h2>
         <div className="socials">
           <a href="https://github.com/ctornquist">
             <FontAwesomeIcon icon={faGithub} className="fa-2x" />

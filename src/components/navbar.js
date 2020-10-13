@@ -19,26 +19,19 @@ class NavBar extends Component {
     if (this.state.currentScrollHeight !== newScrollHeight) {
       this.setState({ currentScrollHeight: newScrollHeight });
     }
-
-    console.log('listening');
-    /* if (window.scrollY > 400) {
-      this.setState({ color: 'white' });
-    } else {
-      this.setState({ color: 'transparent' });
-    } */
   }
 
   render() {
     const op = Math.min(this.state.currentScrollHeight / 500, 1);
     console.log(op);
     return (
-      <div className="navBar" style={{ backgroundColor: `rgba(250, 250, 250, ${op})` }}>
+      <div className="navBar" style={{ backgroundColor: `rgba(222,242,241, ${op})` }}>
         <a href="#welcome" id="name">CT</a>
         <div className="navBar_links">
-          <a href="#about">About</a>
-          <a href="#internships">Internships</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#about">ABOUT</a>
+          <a href="#internships">EXPERIENCES</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#contact">CONTACT</a>
         </div>
       </div>
     );
