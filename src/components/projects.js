@@ -8,8 +8,8 @@ import Slide from 'react-reveal/Slide';
 
 const Projects = (props) => {
   return (
-    <div className="projects" id="projects">
-      <h1>PROJECTS</h1>
+    <div className="projects">
+      <h1 id="projects">PROJECTS</h1>
       <hr />
       <Slide bottom cascade>
         <div className="row">

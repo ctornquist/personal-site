@@ -16,8 +16,8 @@ const Internships = (props) => {
           <p>
             Along with Professor Subrahmanian and friends from the Dutch military, I am using machine learning tools
             to build predictive models of Chinese border incursions into India.
-            We are submitting a paper in upcoming weeks discussing our work creating association rules using
-            to accurately determine the “triggers” that precede incursions
+            We are submitting a paper in upcoming weeks discussing our work creating association rules, which
+            determine the “triggers” that precede incursions.
           </p>
         </div>
         <div className="right">
