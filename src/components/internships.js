@@ -4,7 +4,8 @@ import Fade from 'react-reveal/Fade';
 
 const Internships = (props) => {
   return (
-    <div className="internships" id="internships">
+    <div className="internships">
+      <div id="internships" />
       <h1>EXPERIENCES</h1>
       <hr />
       <Fade left cascade>

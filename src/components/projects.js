@@ -9,7 +9,8 @@ import Slide from 'react-reveal/Slide';
 const Projects = (props) => {
   return (
     <div className="projects">
-      <h1 id="projects">PROJECTS</h1>
+      <div id="projects" />
+      <h1>PROJECTS</h1>
       <hr />
       <Slide bottom cascade>
         <div className="row">
@@ -17,7 +18,7 @@ const Projects = (props) => {
             <FontAwesomeIcon icon={faSearch} className="fa-7x" />
             <p className="title">tiny search engine</p>
             <p className="description">I created a module to parse webpages linked to a given URL, index their contents and process queries to search the pages.
-              It outputs search results ranked by relavency. Check out the code <a href="https://github.com/ctornquist/Search-Engine">here</a>.
+              It outputs search results ranked by relevancy. Check out the code <a href="https://github.com/ctornquist/Search-Engine">here</a>.
             </p>
           </div>
           <div className="card">

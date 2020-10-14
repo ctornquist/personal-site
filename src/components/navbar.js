@@ -7,7 +7,6 @@ class NavBar extends Component {
 
     this.state = {
       currentScrollHeight: 1,
-      // color: 'white',
     };
   }
 
@@ -22,13 +21,9 @@ class NavBar extends Component {
     }
   }
 
-  /* changeColor = () => {
-    this.setState({ color: 'black' });
-  } */
-
   render() {
     const op = Math.min(this.state.currentScrollHeight / 500, 1);
-    if (op >= 0.5) this.changeColor();
+    // if (op >= 0.5) this.changeColor();
     return (
       <div className="navBar" style={{ backgroundColor: `rgba(222,242,241, ${op})` }}>
         <a href="#welcome" id="name">CT</a>
