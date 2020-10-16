@@ -1,5 +1,7 @@
 import '../style.scss';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import NavBar from './navbar';
 import Welcome from './welcome';
 import About from './about';
@@ -17,8 +19,15 @@ const App = (props) => {
       <Projects />
       <Contact />
       <footer>
-        <p> copyright caroline tornquist 2020</p>
-        <p>add some socials in here</p>
+        <p> &#169; caroline tornquist 2020</p>
+        <div className="socials">
+          <a href="https://github.com/ctornquist">
+            <FontAwesomeIcon icon={faGithub} className="fa-2x" />
+          </a>
+          <a href="https://www.linkedin.com/in/carolinetornquist/">
+            <FontAwesomeIcon icon={faLinkedin} className="fa-2x" />
+          </a>
+        </div>
       </footer>
     </div>
   );

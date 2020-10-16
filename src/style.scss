@@ -15,14 +15,17 @@ body, html {
 
 p {
   font-family: "Montserrat", sans-serif;
-  color: #17252a
+  color: #1c2e35
 }
 
 h1, h2, h3 {
   font-family: "Raleway", sans-serif;
-  color: #17252a
+  color: #1c2e35
 }
 
+br {
+  height: 5px;
+}
 
 .navBar {
   display: flex;
@@ -133,7 +136,7 @@ h1, h2, h3 {
   }
 
   img {
-    max-height: 300px;
+    max-height: 350px;
     width: auto;
     border-radius: 20px;
   }
@@ -142,24 +145,21 @@ h1, h2, h3 {
     margin: 3%;
     width: 40vw;
     text-align: center;
-    // animation: 2s slideIn 2s forwards;
-   // transform: translateX(-100%);
   }
 
   &_info {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
   }
 
-  /* @keyframes slideIn {
-    0% {
-      transform: translateX(-900px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  } */
+  a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
 }
 
 .internships {
@@ -325,12 +325,30 @@ footer {
   align-content: center;
   padding: 10px;
   min-height: 75px;
+  align-items: center;
 
   p {
     display: flex;
     margin-bottom: 0px;
     text-align: center;
     align-items: center;
+    margin-left: 4%;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 7%;
+  }
+
+  a {
+    color: #1c2e35;
+    margin: 10%;
+  }
+
+  a:hover {
+    color: #3aafa9;
   }
 }
 
