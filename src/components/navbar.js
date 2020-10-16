@@ -28,6 +28,7 @@ class NavBar extends Component {
       <div className="navBar" style={{ backgroundColor: `rgba(222,242,241, ${op})` }}>
         <a href="#welcome" id="name">CT</a>
         <div className="navBar_links">
+          <a href="#welcome">HOME</a>
           <a href="#about">ABOUT</a>
           <a href="#internships">EXPERIENCES</a>
           <a href="#projects">PROJECTS</a>
