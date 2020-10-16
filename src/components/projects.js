@@ -44,7 +44,7 @@ const Projects = (props) => {
             <FontAwesomeIcon icon={faFileArchive} className="fa-7x" />
             <p className="title">huffman encoder</p>
             <p className="description">Wrote a program to losslessly compress and decompress files using Huffman’s variable-length bit code techniques.
-              It can efficiently compress files to 50% of their previous size allowing for easy transfer of data. 
+              It can efficiently compress files to 50% of their previous size allowing for easy transfer of data.
               Check out the code <a href="https://github.com/ctornquist/Huffmann-Encoding" target="_blank" rel="noreferrer">here</a>.
             </p>
           </div>
@@ -63,7 +63,7 @@ const Projects = (props) => {
             <p className="title">blog</p>
             <p className="description">I created a blog web app to learn more about routing in React and using Redux to manage data.
               Users can sign up, create blog posts, look through other people&#39;s posts, and expand each blog tile into a full page.
-              Check out the frontend <a href="https://github.com/ctornquist/blog-frontend" target="_blank" rel="noreferrer">here</a> and 
+              Check out the frontend <a href="https://github.com/ctornquist/blog-frontend" target="_blank" rel="noreferrer">here</a> and
               the API <a href="https://github.com/ctornquist/blog-api" target="_blank" rel="noreferrer">here</a>.
             </p>
           </div>
