@@ -1,10 +1,5 @@
-# Title
+# README
 
-[deployed url](http://ct-cs52-starter.surge.sh/)
-
-## What Worked Well
-It all worked fine
-
-## What Didn't
-
-## Screenshots
+You can view this site two ways:  
+1. on the web at ctornquist.surge.sh    
+2. clone the repository using git, cd into the repo, and then type "yarn start" in terminal to launch development mode
