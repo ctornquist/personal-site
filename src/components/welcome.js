@@ -34,24 +34,20 @@ class Welcome extends Component {
   }
 
   componentDidMount() {
-    window.setTimeout(this.changeLoaded, 2000);
+    window.setTimeout(this.changeLoaded, 1300);
   }
 
   changeLoaded = () => {
     this.setState({ isLoading: false });
   }
 
-  // visible={this.state.isLoading}
-  // {`spinner-${this.state.isLoading}`}
   render() {
-    console.log('loaded', this.state.isLoading);
-    const val = this.state.isLoading ? 'none' : 'flex';
     return (
       <div>
         <div className={`spinner-${this.state.isLoading}`}>
-          <Loader type="Puff" timeout={2000} color="#3aafa9" />
+          <Loader type="Puff" timeout={1300} color="#3aafa9" />
         </div>
-        <div className={`welcome-${this.state.isLoading}`} id="welcome" style={{ display: { val } }}>
+        <div className={`welcome-${this.state.isLoading}`} id="welcome">
           <div className="name">
             <h1>CAROLINE TORNQUIST</h1>
             <h2>dartmouth &#39;22 computer science major</h2>
@@ -67,37 +63,37 @@ class Welcome extends Component {
           <Fade {...fadeProperties}>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Morey} alt="first" />
+                <img src={Morey} alt="lake morey" />
               </div>
             </div>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Sunrise} alt="first" />
+                <img src={Sunrise} alt="sunrise at gile" />
               </div>
             </div>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Franconia} alt="first" />
+                <img src={Franconia} alt="franconia ridge" />
               </div>
             </div>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Mink} alt="first" />
+                <img src={Mink} alt="sunset on the connecticut" />
               </div>
             </div>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Baker} alt="first" />
+                <img src={Baker} alt="baker tower" />
               </div>
             </div>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Normandy} alt="first" />
+                <img src={Normandy} alt="cliffs at normandy" />
               </div>
             </div>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Fall} alt="first" />
+                <img src={Fall} alt="fall at mink brook" />
               </div>
             </div>
           </Fade>
