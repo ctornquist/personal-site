@@ -41,8 +41,10 @@ class Welcome extends Component {
     const val = this.state.isLoading ? 'none' : 'flex';
     return (
       <div>
-        <Loader type="Puff" timeout="3000" color="#3aafa9" />
-        <div className="welcome" id="welcome" style={{ display: { val } }}>
+        <div className="spinner">
+          <Loader type="Puff" visible={this.state.isLoading} color="#3aafa9" />
+        </div>
+        <div className={`welcome-${this.state.isLoading}`} id="welcome" style={{ display: { val } }}>
           <div className="name">
             <h1>CAROLINE TORNQUIST</h1>
             <h2>dartmouth &#39;22 computer science major</h2>

@@ -27,6 +27,11 @@ br {
   height: 5px;
 }
 
+#main {
+  position: relative;
+  top: -40%;
+}
+
 .navBar {
   display: flex;
   flex-direction: row;
@@ -63,7 +68,17 @@ br {
   }
 }
 
-.welcome {
+.welcome-true {
+  display: none;
+}
+
+.spinner {
+  margin-left: 48vw;
+  margin-top: 40vh;
+}
+
+.welcome-false {
+  display: static;
 
   .name {
     position: absolute;
