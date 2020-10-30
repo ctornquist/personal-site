@@ -20,6 +20,8 @@ const fadeProperties = {
   infinite: true,
   indicators: false,
   arrows: false,
+  autoplay: true,
+  pauseOnHover: false,
 };
 
 class Welcome extends Component {
@@ -31,8 +33,11 @@ class Welcome extends Component {
     };
   }
 
+  componentDidMount() {
+    window.setTimeout(this.changeLoaded, 2000);
+  }
+
   changeLoaded = () => {
-    console.log('calling change load');
     this.setState({ isLoading: false });
   }
 
@@ -44,7 +49,7 @@ class Welcome extends Component {
     return (
       <div>
         <div className={`spinner-${this.state.isLoading}`}>
-          <Loader type="Puff" visible={this.state.isLoading} color="#3aafa9" />
+          <Loader type="Puff" timeout={2000} color="#3aafa9" />
         </div>
         <div className={`welcome-${this.state.isLoading}`} id="welcome" style={{ display: { val } }}>
           <div className="name">
@@ -62,7 +67,7 @@ class Welcome extends Component {
           <Fade {...fadeProperties}>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Morey} alt="first" onLoad={this.changeLoaded} />
+                <img src={Morey} alt="first" />
               </div>
             </div>
             <div className="each-fade">
