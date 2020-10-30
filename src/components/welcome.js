@@ -9,14 +9,17 @@ import Loader from 'react-loader-spinner';
 import Baker from '../images/baker.jpeg';
 import Fall from '../images/fall.jpeg';
 import Franconia from '../images/franconia.jpeg';
-import Mink from '../images/mink.jpeg';
 import Morey from '../images/morey.jpeg';
 import Normandy from '../images/normandy.jpeg';
 import Sunrise from '../images/sunrise.jpeg';
+import FallGile from '../images/fallGile.jpeg';
+// import Flowers from '../images/flowers.jpeg';
+import Quechee from '../images/quechee.jpeg';
+import WaterSunset from '../images/waterSunset.jpeg';
 
 const fadeProperties = {
   duration: 3000,
-  transitionDuration: 500,
+  transitionDuration: 1000,
   infinite: true,
   indicators: false,
   arrows: false,
@@ -34,7 +37,7 @@ class Welcome extends Component {
   }
 
   componentDidMount() {
-    window.setTimeout(this.changeLoaded, 1300);
+    window.setTimeout(this.changeLoaded, 1700);
   }
 
   changeLoaded = () => {
@@ -45,7 +48,7 @@ class Welcome extends Component {
     return (
       <div>
         <div className={`spinner-${this.state.isLoading}`}>
-          <Loader type="Puff" timeout={1300} color="#3aafa9" />
+          <Loader type="Puff" timeout={1700} color="#3aafa9" />
         </div>
         <div className={`welcome-${this.state.isLoading}`} id="welcome">
           <div className="name">
@@ -78,7 +81,7 @@ class Welcome extends Component {
             </div>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Mink} alt="sunset on the connecticut" />
+                <img src={FallGile} alt="sunset on the connecticut" />
               </div>
             </div>
             <div className="each-fade">
@@ -94,6 +97,16 @@ class Welcome extends Component {
             <div className="each-fade">
               <div className="image-container">
                 <img src={Fall} alt="fall at mink brook" />
+              </div>
+            </div>
+            <div className="each-fade">
+              <div className="image-container">
+                <img src={WaterSunset} alt="fall at mink brook" />
+              </div>
+            </div>
+            <div className="each-fade">
+              <div className="image-container">
+                <img src={Quechee} alt="fall at mink brook" />
               </div>
             </div>
           </Fade>
