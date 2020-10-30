@@ -36,6 +36,8 @@ class Welcome extends Component {
     this.setState({ isLoading: false });
   }
 
+  // visible={this.state.isLoading}
+  // {`spinner-${this.state.isLoading}`}
   render() {
     console.log('loaded', this.state.isLoading);
     const val = this.state.isLoading ? 'none' : 'flex';
