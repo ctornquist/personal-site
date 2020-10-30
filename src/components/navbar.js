@@ -1,26 +1,42 @@
 import '../style.scss';
-import React from 'react';
+import React, { Component } from 'react';
 
-const NavBar = (props) => {
-  /* componentDidMount() {
-    document.addEventListener("scroll", () => {
-      const backgroundcolor = window.scrollY < 100 ? "red" : "blue";
+class NavBar extends Component {
+  constructor(props) {
+    super(props);
 
-      this.setState({ navBackground: backgroundcolor });
-    });
-  } */
+    this.state = {
+      currentScrollHeight: 1,
+    };
+  }
 
-  return (
-    <div className="navBar">
-      <a href="#welcome" id="name">CT</a>
-      <div className="navBar_links">
-        <a href="#about">About</a>
-        <a href="#internships">Internships</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent);
+  }
+
+  listenScrollEvent = (e) => {
+    const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
+    if (this.state.currentScrollHeight !== newScrollHeight) {
+      this.setState({ currentScrollHeight: newScrollHeight });
+    }
+  }
+
+  render() {
+    const op = Math.min(this.state.currentScrollHeight / 500, 1);
+    // if (op >= 0.5) this.changeColor();
+    return (
+      <div className="navBar" style={{ backgroundColor: `rgba(222,242,241, ${op})` }}>
+        <a href="#welcome" id="name">CT</a>
+        <div className="navBar_links">
+          <a href="#welcome">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#internships">EXPERIENCES</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#contact">CONTACT</a>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default NavBar;
