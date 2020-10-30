@@ -68,13 +68,25 @@ br {
   }
 }
 
-.welcome-true {
+.spinner-true {
+  display: static;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+
+  .svg {
+    position: absolute;
+    left: 48vw;
+    top: 40vh;
+  }
+}
+
+.spinner-false {
   display: none;
 }
 
-.spinner {
-  margin-left: 48vw;
-  margin-top: 40vh;
+.welcome-true {
+  display: none;
 }
 
 .welcome-false {

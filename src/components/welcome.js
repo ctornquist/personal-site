@@ -41,7 +41,7 @@ class Welcome extends Component {
     const val = this.state.isLoading ? 'none' : 'flex';
     return (
       <div>
-        <div className="spinner">
+        <div className={`spinner-${this.state.isLoading}`}>
           <Loader type="Puff" visible={this.state.isLoading} color="#3aafa9" />
         </div>
         <div className={`welcome-${this.state.isLoading}`} id="welcome" style={{ display: { val } }}>
