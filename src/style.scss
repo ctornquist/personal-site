@@ -397,3 +397,64 @@ footer {
   position: absolute;
   top: -70px;
 }
+
+@media only screen and (max-width: 500px) {
+
+  .about {
+
+    hr {
+      margin-top: 40px;
+    }
+
+    .about_info {
+      flex-direction: column;
+    }
+
+    .bio {
+      width: 75vw;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .internships {
+    .right {
+      flex-direction: column;
+      
+      p {
+        max-width: 75vw;
+      }
+    }
+
+    .medius {
+      flex-direction: column-reverse;
+    }
+  }
+  
+  .projects {
+    .row {
+      flex-direction: column;
+      width: 70%;
+    }
+
+    .card {
+      width: 100%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      min-height: 200px;
+
+      .title {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .contact {
+    #contact-form {
+      width: 75%;
+      margin-left: 14%;
+    }
+  }
+} 

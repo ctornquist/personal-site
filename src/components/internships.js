@@ -21,7 +21,7 @@ const Internships = (props) => {
             determine the “triggers” that precede incursions.
           </p>
         </div>
-        <div className="right">
+        <div className="right medius">
           <p>
             I am managing a team of five engineers to build the MVP, a crowdsourced investment social media site in React, Node, Express and MongoDB, to be presented before investors in late 2020.
             I have spearheaded creation and styling of landing, community and profile pages, as well as connected and
