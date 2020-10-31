@@ -101,12 +101,12 @@ class Welcome extends Component {
             </div>
             <div className="each-fade">
               <div className="image-container">
-                <img src={WaterSunset} alt="fall at mink brook" />
+                <img src={WaterSunset} alt="sunset in southboro" />
               </div>
             </div>
             <div className="each-fade">
               <div className="image-container">
-                <img src={Quechee} alt="fall at mink brook" />
+                <img src={Quechee} alt="quechee gorge" />
               </div>
             </div>
           </Fade>

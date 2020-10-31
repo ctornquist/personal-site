@@ -91,8 +91,20 @@ br {
   display: none;
 }
 
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .welcome-false {
   display: static;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 1s;
 
   .name {
     position: absolute;
