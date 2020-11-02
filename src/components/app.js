@@ -18,18 +18,24 @@ const App = (props) => {
       <Internships />
       <Projects />
       <Contact />
-      <footer>
-        <p> &#169; caroline tornquist 2020</p>
-        <div className="socials">
-          <a href="https://github.com/ctornquist" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub} className="fa-2x" />
-          </a>
-          <a href="https://www.linkedin.com/in/carolinetornquist/" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} className="fa-2x" />
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </div>
+  );
+};
+
+const Footer = (props) => {
+  return (
+    <footer>
+      <p> &#169; caroline tornquist 2020</p>
+      <div className="socials">
+        <a href="https://github.com/ctornquist" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faGithub} className="fa-2x" />
+        </a>
+        <a href="https://www.linkedin.com/in/carolinetornquist/" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} className="fa-2x" />
+        </a>
+      </div>
+    </footer>
   );
 };
 

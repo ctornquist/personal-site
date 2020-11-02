@@ -66,6 +66,11 @@ br {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
+  // hide mobile menu on desktop
+  .icon {
+    display: none;
+  }
 }
 
 .spinner-true{
@@ -399,6 +404,103 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+
+  // .navBar a:not(:first-child) {display: none;}
+  .navBar {
+    background-color: transparent !important;
+
+    #name {
+      display: none;
+    }
+
+    .icon {
+      display: block;
+      position: fixed;
+      right: 3%;
+      top: 2%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      border-width: 0px;
+      border-radius: 4px;
+      min-height: 40px;
+      min-width: 40px;
+      background-color: white;
+    }
+
+    svg {
+      min-height: 30px;
+      min-width: 20px;
+    }
+
+    .navBar_links {
+      display: none;
+    }
+  }
+
+  .navBar.responsive {
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #def2f1 !important;
+    animation: 2s slide-down;
+    height: 40vh;
+    width: 100vw;
+
+    a {
+      float: none;
+      text-align: left;
+    }
+
+    .navBar_links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
+
+      a {
+        margin: 4%;
+      }
+    }
+  }
+
+  @keyframes slide-down {
+    from {
+      height: 3vh;
+    }
+
+    to {
+      height: 40vh; 
+    }
+  }
+
+  #about, #internships, #projects {
+    position: absolute;
+    top: 0px;
+  }
+
+  .welcome-false {
+    .name {
+      margin-top: 13vh;
+    }
+
+    .image-container {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        min-height: 100%;
+        min-width: 100%;
+      }
+    }
+  }
 
   .about {
 

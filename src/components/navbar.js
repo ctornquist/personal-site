@@ -1,5 +1,7 @@
 import '../style.scss';
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 class NavBar extends Component {
   constructor(props) {
@@ -21,19 +23,30 @@ class NavBar extends Component {
     }
   }
 
+  mobileMenu = () => {
+    const x = document.getElementById('navBar');
+    if (x.className === 'navBar') {
+      x.className += ' responsive';
+    } else {
+      x.className = 'navBar';
+    }
+  }
+
   render() {
     const op = Math.min(this.state.currentScrollHeight / 500, 1);
-    // if (op >= 0.5) this.changeColor();
     return (
-      <div className="navBar" style={{ backgroundColor: `rgba(222,242,241, ${op})` }}>
+      <div className="navBar" id="navBar" style={{ backgroundColor: `rgba(222,242,241, ${op})` }}>
         <a href="#welcome" id="name">CT</a>
         <div className="navBar_links">
-          <a href="#welcome">HOME</a>
-          <a href="#about">ABOUT</a>
-          <a href="#internships">EXPERIENCES</a>
-          <a href="#projects">PROJECTS</a>
-          <a href="#contact">CONTACT</a>
+          <a href="#welcome" onClick={this.mobileMenu}>HOME</a>
+          <a href="#about" onClick={this.mobileMenu}>ABOUT</a>
+          <a href="#internships" onClick={this.mobileMenu}>EXPERIENCES</a>
+          <a href="#projects" onClick={this.mobileMenu}>PROJECTS</a>
+          <a href="#contact" onClick={this.mobileMenu}>CONTACT</a>
         </div>
+        <button type="button" className="icon" onClick={this.mobileMenu}>
+          <FontAwesomeIcon icon={faBars} />
+        </button>
       </div>
     );
   }
