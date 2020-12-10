@@ -5,7 +5,8 @@ import 'react-slideshow-image/dist/styles.css';
 import { Fade } from 'react-slideshow-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Loader from 'react-loader-spinner';
+// import Loader from 'react-loader-spinner';
+import { BounceLoader } from 'react-spinners';
 import Baker from '../images/baker.jpeg';
 import Fall from '../images/fall.jpeg';
 import Franconia from '../images/franconia.jpeg';
@@ -48,7 +49,7 @@ class Welcome extends Component {
     return (
       <div>
         <div className={`spinner-${this.state.isLoading}`}>
-          <Loader type="Puff" visible={this.state.isLoading} color="#3aafa9" />
+          <BounceLoader loading={this.state.isLoading} color="#3aafa9" size={100} />
         </div>
         <div className={`welcome-${this.state.isLoading}`} id="welcome">
           <div className="name">
@@ -72,6 +73,7 @@ class Welcome extends Component {
             <div className="each-fade">
               <div className="image-container">
                 <img src={Sunrise} alt="sunrise at gile" onLoad={this.changeLoaded} />
+                { /* onLoad={this.changeLoaded}  */}
               </div>
             </div>
             <div className="each-fade">
